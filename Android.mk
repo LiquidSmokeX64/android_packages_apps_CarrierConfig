@@ -11,6 +11,9 @@ LOCAL_PRIVILEGED_MODULE := true
 
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
+# Enable dexpreopt to speed boot time
+WITH_DEXPREOPT := true
+
 include $(BUILD_PACKAGE)
 
 # This finds and builds the test apk as well, so a single make does both.
